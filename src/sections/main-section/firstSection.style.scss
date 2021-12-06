@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.section-container {
+  font-family: poppins;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .nav-container {
+    text-align: center;
+    .icon {
+      opacity: 0.9;
+      margin: 3rem 3rem;
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+    .icon:hover {
+      transform: scale(1.1);
+    }
+  }
+  .main-headline {
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: -5px;
+    text-align: center;
+    width: 750px;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    animation: smoothBlink 3s 1 ease-in;
+
+    .quote-left {
+      font-size: 4.5rem;
+      padding-right: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  .author-name {
+    margin: 0;
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: italic;
+    animation: smoothBlink 4s 1 ease-in;
+  }
+  .take-a-tour {
+    margin-top: 5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    animation: smoothBlink 5s 1 ease-in-out;
+  }
+  .down-arrow {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 5rem;
+    cursor: pointer;
+    animation: arrowAnimation 3s ease-in-out infinite;
+  }
+  .down-arrow:active {
+    transform: scale(0.95);
+  }
+
+  @keyframes smoothBlink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes arrowAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+}

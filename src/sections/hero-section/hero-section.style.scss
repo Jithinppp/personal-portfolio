@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+.hero-container {
+  background-color: #f3e214;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .img-container {
+    margin-right: 130px;
+    height: 350px;
+    width: 350px;
+    background-color: #fffff9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    .hero-image {
+      background: url("../../assets/jithin.jpg");
+      background-repeat: no-repeat;
+      background-size: contain, cover;
+      height: 94%;
+      width: 94%;
+      align-items: center;
+      text-align: center;
+      border-radius: 50%;
+    }
+  }
+  .title-container {
+    line-height: 1.2;
+    .greetings {
+      color: #fffff9;
+      font-weight: 600;
+      font-size: 4rem;
+      letter-spacing: -5px;
+      margin: 0;
+    }
+
+    .name {
+      margin: 0;
+      font-size: 6rem;
+      font-weight: 700;
+      letter-spacing: -4px;
+    }
+    .slogan {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 300;
+      padding: 10px 0;
+    }
+    .button-primary {
+      background-color: #fffff9;
+      padding: 10px 40px;
+      margin: 10px 0;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .button-primary:hover {
+      filter: brightness(110%);
+      transform: scale(1.01);
+    }
+    .button-primary:active {
+      transform: scale(0.95);
+    }
+    .animating-line {
+      margin-top: 15px;
+      border-radius: 10px;
+      width: 200px;
+      height: 5px;
+      background-color: #fffff9;
+    }
+  }
+}
